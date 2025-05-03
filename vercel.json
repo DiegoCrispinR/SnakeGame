@@ -1,0 +1,5 @@
+{
+  "buildCommand": "mkdir -p public && cp -r *.html *.css *.js *.txt public/",
+  "outputDirectory": "public",
+  "framework": null
+}

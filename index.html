@@ -3,32 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tetris</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4449373134317261"
+     crossorigin="anonymous"></script>
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://pagead2.googlesyndication.com; connect-src 'self' https://*.supabase.co; frame-src https://googleads.g.doubleclick.net;">
 </head>
 <body>
-    <canvas width="320" height="640" id="tetris"></canvas>
+    <div class="container">
+        <!-- Left Ad -->
+        <div class="ad ad-left">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4449373134317261"
+                 data-ad-slot="left-ad-slot"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
-    <div class="scoreboard">
-        <h2>Weekly Leaderboard <span class="real-time-badge">REAL-TIME</span></h2>
-        <table id="leaderboard">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Player</th>
-                    <th>Score</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody id="leaderboard-body">
-                <!-- Leaderboard entries will be added here -->
-            </tbody>
-        </table>
+        <!-- Game Container -->
+        <div class="game-container">
+            <h1>Snake Game</h1>
+            
+            <div class="game-info">
+                <div class="score-container">
+                    <p>Current Score: <span id="current-score">0</span></p>
+                    <p>High Score: <span id="high-score">0</span></p>
+                </div>
+                <button id="start-btn">Start Game</button>
+                <button id="reset-btn">Reset Game</button>
+            </div>
+            
+            <canvas id="game-canvas" width="400" height="400"></canvas>
+            
+            <div class="controls-info">
+                <p>Use arrow keys or WASD to control the snake</p>
+            </div>
+            
+            <div class="scoreboard">
+                <h2>Weekly Leaderboard <span class="real-time-badge">REAL-TIME</span></h2>
+                <table id="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Score</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Leaderboard entries will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Right Ad -->
+        <div class="ad ad-right">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4449373134317261"
+                 data-ad-slot="right-ad-slot"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad ad-bottom">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4449373134317261"
+             data-ad-slot="bottom-ad-slot"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Snake Game. All rights reserved.</p>
+    </footer>
 
     <!-- Supabase Client -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
     <script src="game.js"></script>
 </body>
 </html>
