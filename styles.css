@@ -1,0 +1,23 @@
+/* Real-time badge */
+.real-time-badge {
+  background-color: #2e7d32;
+  color: white;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
